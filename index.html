@@ -443,15 +443,17 @@
     .project-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent);
       border-radius: var(--border-radius);
       padding: 30px;
       display: flex;
       flex-direction: column;
-      transition: border-color var(--transition-speed), transform var(--transition-speed);
+      transition: border-color var(--transition-speed), transform var(--transition-speed), box-shadow var(--transition-speed);
     }
     .project-card:hover {
       border-color: var(--accent);
-      transform: translateY(-4px);
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 8px 30px rgba(0, 255, 65, 0.15), 0 0 0 1px rgba(0, 255, 65, 0.2);
     }
 
     .project-icon {
@@ -750,7 +752,7 @@
         <div class="hero-typed" aria-label="Cybersecurity Student &amp; Aspiring Penetration Tester">
           <span id="typed-text"></span><span class="typed-cursor" aria-hidden="true">|</span>
         </div>
-        <p class="hero-tagline">Exploring the digital frontier, one vulnerability at a time.</p>
+        <p class="hero-tagline">I break things so you don't have to. Passionate about finding what others miss.</p>
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary">
             <i class="fas fa-terminal" aria-hidden="true"></i> View Projects
@@ -771,8 +773,8 @@
         <h2 class="section-title fade-in"><span class="accent">//</span> About Me</h2>
         <div class="about-grid">
           <div class="about-text fade-in">
-            <p>I'm a computer science student specializing in <strong>cybersecurity</strong>, with a deep passion for offensive security and vulnerability analysis. My journey into the world of information security started with a curiosity for understanding how systems work — and how they can be broken.</p>
-            <p>My goal is to become a cybersecurity expert, specifically as a <strong>penetration tester</strong> or <strong>security analyst</strong>. I'm constantly learning through hands-on labs, CTF challenges, and real-world tool practice to build a solid foundation in ethical hacking and defensive security.</p>
+            <p>It all started the day I realized that every system we trust has cracks — and someone needs to find them before the wrong people do. That idea hooked me, and I've been diving deeper into <strong>cybersecurity</strong> ever since. What began as curiosity quickly turned into a real passion for <strong>offensive security</strong> and understanding how things break at a fundamental level.</p>
+            <p>Today, I spend my time solving CTF challenges, analyzing network traffic, and learning to think like an attacker so I can help build better defenses. My goal is clear: become a <strong>penetration tester</strong> or <strong>security analyst</strong> — someone organizations call when they need to know where their weaknesses are before it's too late.</p>
           </div>
           <div class="terminal-card fade-in fade-in-delay-1">
             <div class="terminal-header">
@@ -846,8 +848,8 @@
         <div class="projects-grid">
           <div class="project-card fade-in">
             <div class="project-icon"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i></div>
-            <h3>Network Analysis with Wireshark</h3>
-            <p>Captured and analyzed network traffic to detect anomalies, understand protocol behavior, and identify potential security threats using deep packet inspection techniques.</p>
+            <h3>&#128269; Network Analysis with Wireshark</h3>
+            <p>Analyzed <strong>500+ packets</strong> across live network captures to identify suspicious traffic patterns, protocol anomalies, and potential data exfiltration attempts using deep packet inspection and custom display filters.</p>
             <div class="project-tags">
               <span class="project-tag">Wireshark</span>
               <span class="project-tag">TCP/IP</span>
@@ -856,8 +858,8 @@
           </div>
           <div class="project-card fade-in fade-in-delay-1">
             <div class="project-icon"><i class="fas fa-flag" aria-hidden="true"></i></div>
-            <h3>TryHackMe CTF Challenges</h3>
-            <p>Completed multiple Capture The Flag challenges focused on web exploitation and privilege escalation, applying reconnaissance and enumeration techniques in controlled environments.</p>
+            <h3>&#127988; TryHackMe CTF Challenges</h3>
+            <p>Completed <strong>15+ CTF challenges</strong> on TryHackMe covering web exploitation, privilege escalation, and active directory attacks — ranking up through hands-on reconnaissance and enumeration in real-world scenarios.</p>
             <div class="project-tags">
               <span class="project-tag">CTF</span>
               <span class="project-tag">Pentesting</span>
@@ -866,8 +868,8 @@
           </div>
           <div class="project-card fade-in fade-in-delay-2">
             <div class="project-icon"><i class="fas fa-bug" aria-hidden="true"></i></div>
-            <h3>Vulnerability Scanning</h3>
-            <p>Used Nmap and custom Python scripts to identify exposed services and potential vulnerabilities across target systems, documenting findings for remediation.</p>
+            <h3>&#128737;&#65039; Vulnerability Scanning</h3>
+            <p>Scanned <strong>50+ services</strong> across multiple targets using Nmap and custom Python scripts to map attack surfaces, identify misconfigurations, and document exploitable vulnerabilities for remediation reports.</p>
             <div class="project-tags">
               <span class="project-tag">Nmap</span>
               <span class="project-tag">Python</span>
